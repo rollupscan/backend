@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "description": "An intermediary server for parsing and sending information about rollups.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chance Hudson",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "especial": "0.0.5"
+  }
+}
