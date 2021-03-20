@@ -12,4 +12,7 @@ module.exports = async function connect() {
   })
   // Load the models
   console.log('Database connected')
+  return () => {
+    mongoose.disconnect()
+  }
 }

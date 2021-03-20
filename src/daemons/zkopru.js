@@ -115,7 +115,7 @@ async function saveBlock(rollupId, block) {
     parsedData: block,
     hash: block.hash,
     parentHash: block.header?.parentBlock,
-    l1Transaction: block.proposalTx,
+    l1TxHash: block.proposalTx,
     l1BlockNumber: +block.proposedAt,
     l1BlockHash: l1block.hash,
   })

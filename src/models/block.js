@@ -31,7 +31,7 @@ const BlockSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
-    l1Transaction: {
+    l1TxHash: {
       type: String,
       required: true,
     },
@@ -40,6 +40,17 @@ const BlockSchema = new mongoose.Schema(
       required: true,
     },
     l1BlockNumber: {
+      type: Number,
+      required: true,
+    },
+    // Store the gas used by the block transaction
+    gasConsumed: {
+      type: Number,
+      required: true,
+    },
+    // An abstracted transaction count.
+    // A more specific breakdown can be calculated at request time on a per-rollup basis.
+    transactionCount: {
       type: Number,
       required: true,
     },
