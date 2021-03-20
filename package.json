@@ -4,11 +4,20 @@
   "description": "An intermediary server for parsing and sending information about rollups.",
   "main": "index.js",
   "scripts": {
+    "start": "node -e \"require('dotenv').config(); require('./src')\"",
+    "zkopru": "node src/connectors/zkopru",
+    "db": "sh scripts/mongo.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Chance Hudson",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "especial": "0.0.5"
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "especial": "0.0.5",
+    "mongoose": "^5.12.1",
+    "not-index": "^1.0.5",
+    "uuid": "^8.3.2",
+    "web3": "^1.3.4"
   }
 }
